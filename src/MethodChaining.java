@@ -6,6 +6,9 @@ public class MethodChaining {
                 .getInfo();
 
         System.out.println(info);
+
+        Person person = new Person();
+        person.greet("Maks");
     }
 }
 
@@ -26,4 +29,10 @@ class Person {
     public String getInfo() {
         return "Person[name=" + name + ", age=" + age + "]";
     }
+
+    public void greet(String name){
+        System.out.println();
+        System.out.println("hello, " + name);
+    }
+
 }
