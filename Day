@@ -1,0 +1,22 @@
+enum Day {
+    MONDAY,   
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Day today = Day.MONDAY;
+        System.out.println("Сегодня: " + today);
+        
+        if (today == Day.SATURDAY || today == Day.SUNDAY) {
+            System.out.println("Ура! Выходной!");
+        } else {
+            System.out.println("Рабочий день");
+        }
+    }
+}
