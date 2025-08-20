@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        Person Maga = new Person("Maga", 16);
+
+        System.out.println(Maga.name());
+        System.out.println(Maga.age()); 
+
+        System.out.println(Maga);
+
+        Person MagaCopy = new Person("Maga", 16);
+        System.out.println(Maga.equals(MagaCopy));
+    }
+}
