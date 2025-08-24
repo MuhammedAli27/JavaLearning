@@ -1,0 +1,10 @@
+Person person = new Person("Мага", 16, "maga@mail.com");
+
+String name = person.name();
+int age = person.age();
+String email = person.email();
+
+System.out.println(person);
+
+Person person2 = new Person("Мага", 16, "maga@mail.com");
+System.out.println(person.equals(person2));
