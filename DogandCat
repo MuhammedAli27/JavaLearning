@@ -1,0 +1,39 @@
+package Animals;
+
+import Animals.Animal;
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a1 = new Animal();
+        Animal a2 = new Animal();
+
+        a1.makeSound();
+        a2.makeSound();
+    }
+}
+
+package Animals;
+
+public class Dog extends Animals.Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("гав!");
+    }
+}
+
+package Animals;
+
+public class Cat extends Animals.Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("мяу!");
+    }
+}
+
+package Animals;
+
+public class Animal {
+   public void makeSound() {
+       System.out.println("му!");
+   }
+}
