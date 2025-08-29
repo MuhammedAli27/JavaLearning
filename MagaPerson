@@ -8,3 +8,15 @@ System.out.println(person);
 
 Person person2 = new Person("Мага", 16, "maga@mail.com");
 System.out.println(person.equals(person2));
+
+// или
+
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person("Maga", 16);
+
+        System.out.println(p.name());
+        System.out.println(p.age());
+        System.out.println(p);
+    }
+}
