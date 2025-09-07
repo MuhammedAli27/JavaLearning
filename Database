@@ -1,0 +1,14 @@
+class Database {
+  static String url;
+
+  static {
+    System.out.println("Подключение инициализации к базе!");
+    url = "https://www.google.com/?hl=ru"
+  }
+}
+
+public class Main{
+  public static void main(String[] args) {
+    System.out.println("URL: " + Database.url);
+  }
+}
