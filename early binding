@@ -1,0 +1,21 @@
+class Animal {
+    static void sound() {
+        System.out.println("Животное издаёт звук");
+    }
+
+    private void sleep() {
+        System.out.println("Животное спит");
+    }
+
+    final void eat() {
+        System.out.println("Животное ест");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal.sound();
+        Animal a = new Animal();
+        a.eat();
+    }
+}
