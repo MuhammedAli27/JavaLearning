@@ -1,0 +1,29 @@
+class Transport {
+    void move() {
+        System.out.println("Транспорт двигается");
+    }
+}
+
+class Car extends Transport {
+    @Override
+    void move() {
+        System.out.println("Машина едет по дороге");
+    }
+}
+
+class Bike extends Transport {
+    @Override
+    void move() {
+        System.out.println("Велосипед едет по велодорожке");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Transport t1 = new Car();
+        Transport t2 = new Bike();
+
+        t1.move(); 
+        t2.move(); 
+    }
+}
