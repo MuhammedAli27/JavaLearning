@@ -1,0 +1,18 @@
+  public class Ager 
+      static void checkAge(int age) {
+          if (age < 18) {
+              throw new IllegalArgumentException("Возраст должен быть >= 18");
+          }
+          System.out.println("Доступ разрешён!");
+      }
+
+     public static void main(String[] args) {
+         try {
+             checkAge(15);
+         } catch (IllegalArgumentException e) {
+             System.out.println("Ошибка: " + e.getMessage());
+         }
+
+         System.out.println("Программа продолжает работу!");
+     }
+ }
