@@ -1,0 +1,20 @@
+// Обычный способ
+Work r = new Work() {
+     public void run() {
+          System.out.println("Hi!")
+     } 
+}
+
+// Через Лямбду
+Work r = () -> System.out.println("Hi!")
+
+
+// без лямбды с параметрами
+Comparator<Integer> comp = new Comparator<>() {
+    public int compare(Integer a, Integer b) {
+        return a - b;
+    }
+};
+
+// с лямбдой параметрами 
+Comparator<Integer> comp = (a, b) -> a - b;  
