@@ -1,0 +1,45 @@
+class Car {
+    void drive() {
+        System.out.println("Машина едет");
+    }
+}
+
+class Porsche extends Car {
+    @Override
+    void drive() {
+        System.out.println("Porsche едет быстро");
+    }
+
+    @Deprecated
+    void oldFeature() {
+        System.out.println("больше не используется!");
+    }
+}
+
+class BMW extends Car {
+    @Override
+    void drive() {
+        System.out.println("BMW едет стильно");
+    }
+}
+
+class Mercedes extends Car {
+    @Override
+    void drive() {
+        System.out.println("Mercedes едет комфортно");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car porsche = new Porsche();
+        Car bmw = new BMW();
+        Car mers = new Mercedes();
+
+        porsche.drive();
+        bmw.drive();
+        mers.drive();
+
+        ((Porsche) porsche).oldFeature();
+    }
+}
