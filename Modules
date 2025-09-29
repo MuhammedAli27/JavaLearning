@@ -1,0 +1,24 @@
+module car {
+    exports com.example.car;
+}
+package com.example.car;
+
+public class Porsche {
+    public void drive() {
+        System.out.println("Porsche едет быстро");
+    }
+}
+
+module mainapp {
+    requires car;
+}
+package com.example.main;
+
+import com.example.car.Porsche;
+
+public class Main {
+    public static void main(String[] args) {
+        Porsche p = new Porsche();
+        p.drive();
+    }
+}
