@@ -1,0 +1,37 @@
+public class Engine {
+    public void start() {
+        System.out.println("Двигательа запущен");
+    }
+}
+
+public class TurboEngine extends Engine {
+    @Override
+    public void start() {
+        System.out.println("Турбо двигатель запущен!");
+    }
+}
+
+public class Car {
+    private Engine engine;
+
+    public Car(Engine engine) {
+        this.engine = engine;
+    }
+
+    public void drive() {
+        engine.start();
+        System.out.println("Машина поехала");
+    }
+}
+
+public class Maining {
+    public static void main(String[] args) {
+        Engine normalEngine = new Engine();
+        Car car1 = new Car(normalEngine);
+        car1.drive();
+
+        Engine turbo = new TurboEngine();
+        Car car2 = new Car(turbo);
+        car2.drive();
+    }
+}
