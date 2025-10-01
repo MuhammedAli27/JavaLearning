@@ -1,0 +1,23 @@
+class Service {
+    void print() {
+        System.out.println("Привет из зависимости!");
+    }
+}
+
+class Client {
+    Service service;
+    Client(Service s) {
+        this.service = s;
+    }
+    void doWork() {
+        service.print();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Service s = new Service();
+        Client c = new Client(s);
+        c.doWork();
+    }
+}
