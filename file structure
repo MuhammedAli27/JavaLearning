@@ -1,7 +1,7 @@
-import java.io.File;
-
-public class Tree {
-    public static void main(String[] args) {
-        System.out.println("I Love GitHub!");
-    }
+import java.io.File;                                         |                        //Другой код:
+                                                             |                           String joke = getJokeFromApi();
+public class Tree {                                          |                           saveJokeToFile(joke);
+    public static void main(String[] args) {                 |                          readJokeFromFile();
+        System.out.println("I Love GitHub!");                |
+    }                                                        |
 }
