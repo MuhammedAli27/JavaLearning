@@ -1,0 +1,15 @@
+package Array;
+
+public class array {
+    public static void main(String[] args) {
+        String[] array = new String[3];
+        array[0] = "Яблоко";
+        array[1] = "Банан";
+        array[2] = "Апельсин";
+
+        String[] fruits = {"Яблоко", "Банан", "Апельсин"};
+        
+        System.out.println("Массив array: " + java.util.Arrays.toString(array));
+        System.out.println("Массив fruits: " + java.util.Arrays.toString(fruits));
+    }
+}
