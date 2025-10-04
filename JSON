@@ -1,0 +1,10 @@
+{
+  "name": "Мухаммед",
+  "age": 16,
+  "isStudent": true,
+  "hobbies": ["Спорт", "Прога"]
+  "address": {
+    "city": "Moskow"
+    "street": "Lenina"
+  }
+}
