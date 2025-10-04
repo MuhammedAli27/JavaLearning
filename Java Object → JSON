@@ -1,0 +1,8 @@
+Person person = new Person();
+person.setName("Мухаммед");
+person.setAge(16);
+person.setStudent(true);
+
+ObjectMapper mapper = new ObjectMapper();
+String json = mapper.writeValueAsString(person);
+System.out.println(json);
