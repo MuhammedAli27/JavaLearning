@@ -1,0 +1,23 @@
+// JSON -> Java Object
+public class JsonExample {
+    public static void main(String[] args) throws Exception {
+        String json = """
+            {
+                "name": "Maga",
+                "age": "16",
+                "isStudent": true,
+                "hobbies": ["Спорт", "Прога"],
+                "address": {
+                    "city": "Moskow",
+                    "street": "Lenina"
+                }
+            }
+            """;
+
+        ObjectMapper mapper = new ObjectMapper();
+        Person person = mapper.readValue(json, Person.class);
+
+        System.out.println(person.getName());
+        System.out.println(person.getAge());
+    }
+}
